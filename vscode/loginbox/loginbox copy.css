@@ -1,0 +1,89 @@
+
+/* 공통 스타일 */
+* { margin: 0; padding: 0; font-family: 'Pretendard-Medium'; 
+    box-sizing: border-box;}
+  #container { width: 100%; }
+  ul li { list-style: none; }
+  a { text-decoration: none; }
+
+  /* 로그인후_박스 */
+ .LoginafterBox {
+    position: absolute;
+    width: 270px;
+    height: 230px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+}
+
+/* 프로필 사진 */
+.profile_img {
+    text-align: center;
+}
+.profile_img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+/* 이름/이력서 */
+.cp_LoginafterText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* 이름 */
+.Loginafter_name {
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: #333;
+}
+/* 이력서 */
+.Loginafter_btn {
+    display: block;
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #1A8DFF;
+}
+.Loginafter_btn:hover {
+    background-color: #FF5500;
+}
+.color_blue_txt {
+    color: #ffffff;
+}
+
+/* 지원한곳 */
+.cp_LinkBox {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 10px;
+    border-top: 1px solid #5d5d5d;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.cp_LinkBox a {
+    display: inline-block;
+    margin: 5px 5px;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cp_LinkBox a:hover {
+    text-decoration: underline;
+}
+
+.color_blue2_txt {
+    color: #0056b3;
+}
