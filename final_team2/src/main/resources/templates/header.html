@@ -22,7 +22,7 @@
                         <a th:href="@{/rboard/list}">리뷰</a>
                     </div>
                 </div>
-                    <a th:href="@{/chat}">문의상담</a>
+                    <a th:href="@{/member/inquiry}">문의상담</a>
                 </div>
             </div>
 			
@@ -36,15 +36,23 @@
 	                </div>
 	             </div>
             </th:block>
-                
+            
             <th:block sec:authorize="isAuthenticated()">
-            	<div class="login">			
-	                <i class="fa-solid fa-user"></i>
+            	<div class="login" sec:authorize="hasAuthority('MEMBER')">			
+	                <!-- <i class="fa-solid fa-user"></i> -->
 	                <div class="login_b">
-	                    <a th:href="@{/member/logout}">로그아웃</a> |
-	                    <a th:href="@{/member/mypage}">마이페이지</a>
+	                	[<span sec:authentication="principal.member.mname"></span>]님 | 
+	                    <a th:href="@{/member/logout}">로그아웃</a>
 	                </div>
 	             </div>
+	             
+	             <div class="login" sec:authorize="hasAuthority('COMPANY')">			
+	               <!--  <i class="fa-solid fa-user"></i> -->
+	                <div class="login_b">
+	                	[<span sec:authentication="principal.company.cname"></span>] 담당자님 
+	                    <a th:href="@{/member/logout}">로그아웃</a>
+	                </div>
+	             </div>    
             </th:block>
     </section>
      </div>
