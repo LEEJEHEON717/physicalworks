@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'Pretendard-Medium';
   src: url(Pretendard-Medium.woff)format('woff');
@@ -218,3 +219,48 @@ font-weight: 600;
   );
   transition: all 0.475s;
 }
+=======
+
+/* 공통 스타일 */
+* { margin: 0; padding: 0; font-family: 'Pretendard-Medium'; 
+    box-sizing: border-box;}
+  #container { width: 100%; }
+  ul li { list-style: none; }
+  a { text-decoration: none; }
+
+  /* .hospital_list h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  } */
+
+  .login_after {
+    position: absolute;
+    width: 270px;
+    height: 230px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    top: 20px;
+    right: 20px;
+    padding: 17px;
+}
+.welcome {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.user-info {
+    margin-bottom: 20px;
+}
+.logout-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+>>>>>>> 96c4277f0a1e44a24fba83e8da243e1072a6df91
